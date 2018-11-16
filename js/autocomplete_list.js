@@ -13,7 +13,6 @@ class AutoCompleteList extends Component<any, any> {
   }
 
   componentWillReceiveProps(props) {
-    console.log('props: ', props);
     this.setState({
       dataSource: this.state.dataSource.cloneWithRows([].concat(props.results))
     })
